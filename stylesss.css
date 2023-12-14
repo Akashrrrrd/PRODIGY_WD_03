@@ -1,0 +1,73 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.game-container {
+    text-align: center;
+}
+
+h1 {
+    color: #000;
+}
+
+.options {
+    margin: 20px 0;
+}
+
+button, label {
+    font-size: 1em;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    border: 2px solid #fff;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Set text color to white */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #333;
+}
+
+.message {
+    font-size: 1.2em;
+    color: #000;
+    margin-bottom: 10px;
+}
